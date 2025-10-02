@@ -1,0 +1,5 @@
+# Lokale Konfigurationsdateien
+.env
+
+# Bilder-Ordner ausschließen
+/Objektbilder/

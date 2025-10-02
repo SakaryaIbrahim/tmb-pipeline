@@ -58,33 +58,30 @@ Material: {material}
 Dimensions: {dimensions}
 Year: {year}
 
-Use title to choose the plain object type and function wording in Paragraph 1 if consistent with the images.
-Facts from manufacturer, material, dimensions, year are authoritative list data and must be included in Paragraph 2 as a clearly labeled sentence beginning with „Angaben laut Liste:“ (German) and “According to the list:” (English).
-Copy their values verbatim; do not rephrase.
-Never invent missing values. If a field is absent or equals "Leere Zelle", omit it entirely from that list sentence.
+Use title to choose the plain object type and function wording in the first German paragraph only if it is consistent with the images.
+Facts from manufacturer, material, dimensions, year are authoritative list data and must be included in the second German paragraph as a clearly labeled sentence beginning with „Angaben laut Liste:“ (German) and “According to the list:” (English).
+Copy values verbatim; do not rephrase. Never invent missing values. If a field is absent or equals "Leere Zelle", omit it entirely from that list sentence.
 Do not state date, maker, materials, or dimensions as if they were seen on the object unless they are visibly inscribed. For visible inscriptions, transcribe verbatim in quotes; use […] for illegible parts.
 Ban hedging/guessing: avoid vermutlich, wahrscheinlich, wohl, offenbar, anscheinend, möglicherweise, könnte, dürfte, early/late, typical, domestic, etc.
-
-OUTPUT (exactly two blocks, in this order)
-
-1) CATALOGUE TEXT (DE → EN)
-Write 2–3 short paragraphs in German, then provide an English translation with the same constraints.
-
-Paragraph 1 (DE): Name the object type in plain words and its function/purpose (use title if it matches the images).
-
-Paragraph 2 (DE): Strictly image-based description: form and construction (shape, handles, openings, moving parts, connectors); colours/finish; materials only if visually evident; transcribe any visible labels/marks verbatim (use […] for gaps).
-At the end of Paragraph 2 (DE), add ONE sentence with Excel facts using EXACT formatting, but include only the fields that exist (omit any that are "Leere Zelle"):
-Angaben laut Liste: {de_list_sentence}.
-
-Paragraph 3 (DE): Condition notes only (e.g., Kratzer, Korrosion, Abplatzungen, fehlende Teile). No usage scenarios or history.
-
-Then provide the EN translation mirroring the structure above.
-In the English version of Paragraph 2, reproduce the list sentence as:
-According to the list: {en_list_sentence}.
-
-2) CAPTION (German)
-One sentence (≤35 Wörter) suitable for a label: Objekttyp, Funktion/Zweck, sichtbares Material/Finish, datierungslos.
-Do not include maker/date/provenance here unless they are visibly inscribed; Excel facts remain only in the “Angaben laut Liste” sentence within the description.
+OUTPUT FORMAT (exactly three sections, in this order). Follow these layout rules strictly:
+Do not include any labels like “Paragraph”, numbers, bullets, or section numbers in the output.
+Use the exact section headings shown below.
+Within each description, write three short paragraphs separated by a single blank line.
+Caption line (German)
+Write one sentence (≤35 Wörter) on a single line.
+German description:
+Write three short paragraphs, separated by blank lines:
+* Paragraph 1 content: object type and function in plain words (use title if it matches the images).
+* Paragraph 2 content: strictly image-based description—form/construction (shape, handles, openings, moving parts, connectors); colours/finish; materials only if visually evident; inscriptions verbatim in quotes with […] for gaps.
+At the end of this paragraph, append one list sentence using exactly this pattern (include only fields that exist; keep order and punctuation):
+Angaben laut Liste: Hersteller: <manufacturer>; Material: <material>; Maße: <dimensions>; Jahr: <year>.
+* Paragraph 3 content: condition notes only (e.g., Kratzer, Korrosion, Abplatzungen, fehlende Teile). No usage scenarios or history.
+English description:
+Write three short paragraphs, mirroring the German paragraphs and paragraph breaks exactly. Include the list sentence in the second paragraph as:
+According to the list: Manufacturer: <manufacturer>; Material: <material>; Dimensions: <dimensions>; Year: <year>.
+Formatting constraints:
+Do not print the words “Paragraph”, “DE”, “EN”, “Block”, or any numbering/bullets in the output.
+Output must contain only: the caption line, the line German description:, the three German paragraphs, the line English description:, and the three English paragraphs—nothing else before or after.
 """
 
 # ----------------------------------------------------------
